@@ -7,7 +7,8 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
-<div id="secondary">
+<div id="sidebar">
+<div class="sidebar-content">
 	<?php
 		$description = get_bloginfo( 'description', 'display' );
 		if ( ! empty ( $description ) ) :
@@ -26,4 +27,5 @@
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div><!-- #primary-sidebar -->
 	<?php endif; ?>
+	</div>
 </div><!-- #secondary -->
