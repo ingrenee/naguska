@@ -12,10 +12,10 @@
 	<?php
 		// Page thumbnail and title.
 		twentyfourteen_post_thumbnail();
-		//the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' );
+		the_title( '<h1 class="title">', '</h1>' );
 	?>
 
-	<div class="entry-content">
+	<div class="description">
 		<?php
 			the_content();
 			wp_link_pages( array(

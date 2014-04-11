@@ -33,7 +33,7 @@
 <?php wp_head(); ?>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
 <!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -88,19 +88,24 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="pre-header">
-		<div class="logo-lityo"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a> </div>
-</div>
+
+
+
+
+
 <header>
-		<h1> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-thaskiy.png" /></a> </h1>
-		<nav>
-		
-		
-		<?php get_sidebar( 'header' ); ?>
-		
-		
-			
-				<?php  
+		<div class="container"> 
+				<!--  cabecera logo -->
+				<div class="header">
+						<div class="content"> <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<span><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg"></span></a> </div>
+				</div>
+				
+				<!--  menu  -->
+				<div class="menu">
+						<div class="content" id="menu-main">
+						
+								<?php  
 		
 		
 		
@@ -130,6 +135,45 @@ wp_nav_menu( $defaults );
 		
 		
 		 ?>
-		</nav>
+						
+						
+								<ul id="menu2">
+										<li class="active"><a href="index.php">HOME</a></li>
+										<li><a href="about.php">NOSOTROS</a></li>
+										<li><a href="productos.php">PRODUCTOS</a> </li>
+										<li><a href="catalogo.php">ARTESANOS</a> </li>
+										<li><a href="#">CONDICIONES DE EXPORTACIÓN</a> </li>
+										<li><a href="contacto.php">CONTACTO</a></li>
+								</ul>
+						</div>
+				</div>
+				
+				<!-- botones de lenguajes y sociales -->
+				<div class="sub">
+						<div class="socialbar">
+								<div class="content">
+										<ul>
+												<li> <a href="#" class="twitter"><span>twitter</span></a>
+												<li> <a href="#" class="facebook"><span>facebook</span></a> </li>
+										</ul>
+								</div>
+						</div>
+						<div class="lang">
+								<div class="content">
+								
+								<?php get_sidebar( 'header' ); ?>
+								
+										<ul>
+												<li class="active"><a href="#">ESPAÑOL <span>ES</span></a></li>
+												<li><a href="#">ENGLISH <span>EN</span></a></li>
+										</ul>
+								</div>
+						</div>
+				</div>
+		</div>
 </header>
+
+
+
+
 

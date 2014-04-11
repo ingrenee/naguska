@@ -14,13 +14,21 @@
 get_header(); ?>
 
 
-<section class="first"><?php
+<div class="first">
+<div class="container">
+<?php
 	if ( is_front_page()):
 		// Include the featured content template.
 		get_template_part( 'home-slider' );
 ?>
 
 <?PHP else:?>
+
+
+<div class="image-deco right margin-left-6">
+		
+		<img src="<?php echo get_template_directory_uri(); ?>/images/imagen-deco-01.jpg" class=""   />
+</div>
 
 <?php
 				// Start the Loop.
@@ -48,7 +56,7 @@ get_header(); ?>
 	endif;
 ?>
 		
-</section>
+</div></div>
 <?php
 	if ( is_front_page()): ?>
 	<section class="second">
