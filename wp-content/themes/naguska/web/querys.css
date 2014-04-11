@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Small screens*/
+@media only screen {
+} /* Define mobile styles */
+ @media only screen and (max-width: 28em) {
+.indicador {
+	background-color: #090 !important;
+}
+.tienda {
+	margin-bottom: 40px;
+}
+.tienda .tienda-image {
+	margin-bottom: 10px;
+}
+.tienda .tienda-image, .tienda .tienda-data {
+	width: 100%;
+	clear: both;
+}
+.tienda a.boton {
+	display: none;
+}
+.catalogo .galeria-col-1 .galeria-sub-col-1 {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.catalogo .galeria-col-1 .galeria-sub-col-2 {
+	width: 100%;
+	text-align: center;
+}
+.form .row label input[type=text],  .form .row label textarea {
+	width: 100%;
+}
+span.space {
+	display: none;
+}
+.form button {
+	clear: both;
+	margin-bottom: 5px;
+}
+}
+ @media only screen and (max-width: 40em) {
+.indicador {
+	background-color: #F0F;
+}
+/* estilos cabecera*/
+.image-hover {
+	width: 45%;
+}
+.image-hover img {
+	width: 100%;
+	height: auto;
+}
+.container .content-page {
+	margin-top: 20px;
+	padding: 0px 6%;
+}
+.layer-content .seccion-left {
+	width: 100%;
+	position: relative;
+	min-height: 120px;
+}
+.first {
+	width: 100%;
+	position:relative;
+	padding-top:20px;
+}
+.home .slider {
+	margin-top: 0px;
+}
+#menu2 {
+	display: none;
+}
+.slicknav_menu {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.lang {
+	display: inline-block;
+	float: left;
+}
+.lang .content ul li a {
+	font-size: 0px;
+}
+.lang ul li a span {
+	display: inline-block;
+	font-size: 11px !important;
+}
+.lang ul li {
+	display: inline-block;
+}
+.socialbar {
+	display: inline-block;
+	float: right;
+}
+.socialbar .content {
+	
+}
+.catalogo .galeria-col-1 {
+	margin-bottom: 20px;
+}
+.galeria, .catalogo .galeria-col-2 {
+	width: 100%;
+}
+.catalogo .galeria-col-1 .galeria-sub-col-1 ul li a span {
+	display: inline-block;
+}
+.catalogo .galeria-col-1 {
+	margin-top: 0px;
+}
+.contacto .content-page {
+	padding-top: 20px;
+}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+ @media only screen and (max-width: 52.063em) {
+.indicador {
+	background-color: #FFF !important;
+}
+.widget-contacto-image {
+	display: none;
+}
+.contacto .content-page {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container .content .content-page .info-contacto p {
+	margin-left: 0px;
+}
+}
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) {
+.indicador {
+	background-color: #0FF;
+}
+} /* min-width 641px, medium screens */
+ @media only screen and (min-width: 40.063em) and (max-width: 62em) {
+.indicador {
+	background-color: #F00;
+}
+ 
+.catalogo .galeria-col-1 {
+	margin-bottom: 20px;
+}
+.galeria, .catalogo .galeria-col-2 {
+	width: 100%;
+}
+.catalogo .galeria-col-1 .galeria-sub-col-1 ul li a span {
+	display: inline-block;
+}
+}
+ @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+.indicador {
+	background-color: #00F;
+}
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) {
+} /* min-width 1025px, large screens */
+ @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) {
+} /* min-width 1441px, xlarge screens */
+ @media only screen and (min-width: 90.063em) and (max-width: 120em) {
+} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) {
+} /* min-width 1921px, xlarge screens */
+.indicador
+{
+	display:none;}
